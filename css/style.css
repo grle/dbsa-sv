@@ -1,0 +1,391 @@
+/**************ROOTS */
+:root {
+  /* COLORS */
+  --color-primary: #003144;
+  --bg-color-main: #FCFCFC;
+  --bg-color-lg: #FDFDFD;
+  --bg-color: #F2F2F2;
+  --text-color: #333333;
+  /* SPACING */
+}
+
+/**************MAIN */
+* {
+  box-sizing: border-box;
+}
+
+html {
+  margin: 0;
+  min-height: 100%;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Playfair Display', serif;
+}
+
+h1 {
+  font-size: 5rem;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 200;
+  line-height: 1.5;
+  font-size: 1.3rem;
+  background-color: var(--bg-color-main);
+}
+
+a {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--color-primary);
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 9;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+  background-color: var(--color-primary);
+  color: white;
+  font-size: 1rem;
+  line-height: 1;
+  padding: 10px;
+}
+
+/**************NAVBAR */
+.logo-img {
+  height: 70px;
+  padding: 10px;
+}
+
+.logo-link {
+  display: flex;
+  color: white;
+}
+
+.logo-link p {
+  font-weight: 900px;
+}
+
+.logo {
+  /* flex-grow: 0; */
+}
+
+.menu-list {
+  padding: 0;
+}
+
+.menu-item {
+  display: inline-block;
+}
+
+.menu-item a {
+  color: white;
+  font-size: 1.1rem;
+  padding: 23px 20px;
+}
+
+.menu-item a:hover {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition-duration: 0.3s;
+}
+
+.toggle {
+  display: none;
+}
+
+/**************FOOTER */
+.footer-text {
+
+}
+
+/**************FLEX */
+/* HEADER */
+.header {
+  display: flex;
+  justify-content: center;
+  background-image: url("../img/index-img/tadej-skofic-bg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.header-text {
+  padding: 0 2rem;
+}
+
+.header div {
+  margin: 15rem auto;
+}
+
+.header h1 {
+  color: white;
+}
+
+.header h3 {
+  font-weight: 400;
+  color: white;
+}
+
+/* CONTENT - 3 COLUMN*/
+.col-3 {
+  display: flex;
+  justify-content: center;
+  /* background-color: white; */
+}
+
+.col-3 div {
+  background-color: white;
+  /* padding: 50px 50px 70px 50px; */
+  margin: 20px;
+  width: 500px;
+}
+
+.col-3 h3 {
+  line-height: 1.2;
+}
+
+.box-padding {
+  padding-bottom: 50px;
+}
+
+.box-padding h3 {
+  padding: 0 50px;
+}
+
+.box-padding p {
+  padding: 0 50px 20px 50px;
+}
+
+.box-padding a {
+  margin: 0 50px 0 50px;
+}
+
+.box-padding img {
+  width: 100%;
+}
+
+/* CONTENT - 2 COLUMN */
+.col-2 {
+  display: flex;
+}
+
+.col-2-pic {
+  background-image: url("../img/index-img/about-bekir-donmez.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  width: 100rem;
+}
+
+.col-2-text {
+  padding: 50px;
+  background-color: var(--bg-color);
+}
+
+/* RESOURCE */
+.center-resources {
+  display: flex;
+  justify-content: center;
+  padding: 2rem 1rem 5rem 1rem;
+}
+
+.resource-text {
+  width: 900px;
+}
+
+.resource-text p {
+  padding-bottom: 50px;
+}
+
+/* Contact */
+.contact-text {
+  color: white;
+  padding: 2rem 2rem 0 2rem;
+}
+
+.contact-text h2 {
+  margin-bottom: 0;
+}
+
+/**************BACKGROUND STYLE */
+.color-bg {
+  background-color: var(--bg-color);
+}
+
+.color-bg-primary {
+  background-color: var(--color-primary);
+}
+
+/**************BUTTON */
+.btn {
+  color: white;
+  /* display: block;
+  width: 200px; */
+  background-color: var(--color-primary);
+  padding: 10px 30px;
+  border: 1px solid var(--color-primary);
+  font-weight: 400;
+}
+
+.btn:hover {
+  color: var(--color-primary);
+  background-color: white;
+  transition-duration: 0.3s;
+}
+
+.socials {
+  padding: 0 auto 3rem auto;
+  display: flex;
+  justify-content: center;
+}
+
+.socials p {
+  padding: 1rem;
+}
+
+.soc-icon {
+  color: white;
+  /* padding: 5px; */
+}
+
+.soc-icon:hover {
+  color: var(--bg-color-main);
+  transition-duration: 0.3s;
+}
+
+/**************GENERAL STYLE */
+.center-text {
+  text-align: center;
+}
+
+.center-obj {
+  margin: auto;
+}
+
+.spacing {
+  margin: 10rem auto;
+}
+
+.spacing-w-s {
+  margin: 5rem 5rem;
+}
+
+.white-txt {
+  color: white;
+}
+
+.shadow {
+  box-shadow: 0px 5px 10px 1px gray;
+}
+
+.nav-shadow {
+  box-shadow: 0px 1px 2px 0px black;
+}
+
+.txt-shadow {
+  text-shadow: 4px 4px 20px black;
+}
+
+/**************RESPONSIVE */
+@media (max-width: 1300px) {
+  .logo-text {
+    display: none;
+  }
+
+  /* navbar */
+  /* .menu {
+    order: 2;
+  }
+  .toggle {
+    display: block;
+    list-style-type: none;
+    order: 1;
+    font-size: 20px;
+  }
+  .fa-bars {
+    color: white;
+  } */
+}
+@media (max-width: 1000px) {
+  body {
+    font-size: 1rem;
+  }
+  .menu-item {
+    margin-top: 7px;
+  }
+  .spacing {
+    margin: 5rem auto;
+  }
+  /* 3 columns */
+  .menu-item a {
+    font-size: 1rem;
+  }
+  .box-padding h3 {
+    padding: 0 25px;
+  }
+  .box-padding p {
+    padding: 0 25px 25px 25px;
+  }
+  .box-padding a {
+    margin: 25px;
+  }
+
+
+}
+
+@media (max-width: 800px) {
+  /* header */
+  .header div {
+    margin: 10rem auto 3rem auto;
+  }
+
+  /* 3 columns */
+  .col-3 {
+    flex-direction: column;
+    align-items: center;
+  }
+  .col-3 div {
+    width: 90%;
+    max-width: 600px;;
+    /* margin: 0 25px; */
+  }
+  /* 2 columns */
+  .spacing-w-s {
+    margin: 1rem 1rem;
+  }
+  .col-2-text {
+    padding: 0 20px 50px 20px;
+  }
+  .col-2-pic {
+    width: 30rem;
+  }
+  /* footer */
+  .footer-text {
+    flex-direction: column;
+    /* font-size: 12px; */
+    line-height: 1.2;
+  }
+}
