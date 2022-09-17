@@ -16,9 +16,9 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
     rel="stylesheet">
-    
+
   <!-- SCRIPT -->
-  <script src="https://kit.fontawesome.com/02d5cf44c4.js" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/e4709d6774.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -28,39 +28,26 @@
     <div class="logo">
       <a class="logo-link" href="index.html">
         <img class="logo-img" src="img/logo-white.png" alt="DBSA logo">
-        <strong>
-          <p class="logo-text">Depression and Bipolar Support Alliance</p>
-        </strong>
       </a>
-    </div>
-
-    <div class="menu">
-      <ul class="menu-list">
-        <!--
-        -->
-        <li class="menu-item"> <a href="index.html">Home</a></li>
-        <!--
-        -->
-        <li class="menu-item"> <a href="pages/about.html">About</a></li>
-        <!--
-        -->
-        <li class="menu-item"> <a href="pages/programs.html">Programs</a></li>
-        <!--
-        -->
-        <li class="menu-item"> <a href="pages/get-involved.html">Get Involved</a></li>
-        <!--
-        -->
-        <li class="menu-item"> <a href="pages/resources.html">Resources</a></li>
-        <!--
-      -->
-        <li class="toggle"><a href="#"><i class="fas fa-bars"></i></a></li>
-      </ul>
     </div>
   </nav>
 
+  <div class="mobile-menu">
+    <div id="backdrop" onclick="toggleMenu()"></div>
+    <ul id="menu">
+      <li class="menu-item"> <a href="index.html">Home</a></li>
+      <li class="menu-item"> <a href="pages/about.html">About</a></li>
+      <li class="menu-item"> <a href="pages/programs.html">Programs</a></li>
+      <li class="menu-item"> <a href="pages/get-involved.html">Get Involved</a></li>
+      <li class="menu-item"> <a href="pages/resources.html">Resources</a></li>
+    </ul>
+  </div>
+
+  <div id="toggle"><i class="fas fa-bars" onclick="toggleMenu()"></i></div>
+
   <!-- HEADER -->
   <div class="header">
-    <div class="header-text">
+    <div class="header-text white-text">
       <h1 class="txt-shadow">DBSA Silicon Valley</h1>
       <h3 class="txt-shadow">Welcome! We are glad to see you.</h3>
     </div>
@@ -68,21 +55,23 @@
 
   <!-- ABOUT -->
   <div class="spacing-w-s">
-    <div class="col-2">
-      <div class="col-2-pic"></div>
-      <div class="col-2-text">
+    <div class="col-1">
+      <div class="col-1-pic"></div>
+      <div class="col-1-text">
         <h2>Who We Are</h2>
         <p>DBSA Silicon Valley is a chapter of the Depression & Bipolar Support
           Alliance, which is dedicated to helping people with mood disorders.
           We are a group of volunteers located in the Bay Area and we provide support groups for those
-          who are struggling with their mental illnesses.</p>
-        <p>Everyone is welcome here. Feel free to drop by and let us know how we can help you! You are not
-          alone in this struggle, and we are here to support your recovery.</p>
+          who are struggling with their mental illnesses.
+          <br>
+          <br>
+          Everyone is welcome here. Feel free to drop by and let us know how we can help you! You are not
+          alone in this struggle and we are here to support your recovery.
+        </p>
         <a class="btn shadow" href="pages/about.html">About Us</a>
       </div>
     </div>
   </div>
-
 
   <!-- PROGRAMS -->
   <div class="spacing">
@@ -153,32 +142,36 @@
   <!-- CONTACT -->
   <div class="center-text color-bg-primary contact-text">
     <h2>Contact Us</h2>
-    <p><a class="white-txt" href="mailto:info@dbsasiliconvalley.org">info@dbsasiliconvalley.org</a></p>
+    <p><a class="white-text" href="mailto:info@dbsasiliconvalley.org">info@dbsasiliconvalley.org</a></p>
     <!-- socials -->
     <div class="socials">
-      <p>
-        <a href="mailto:info@dbsasiliconvalley.org">
-          <i class="soc-icon fa-solid fa-envelope"></i>
-        </a>
-      </p>
-      <p>
-        <a href="#">
-          <i class="soc-icon fa-brands fa-facebook-f"></i>
-        </a>
-      </p>
-      <p>
-        <a href="#">
-          <i class="soc-icon fa-brands fa-instagram"></i>
-        </a>
-      </p>
-
-    </div>
+  <p>
+    <a href="mailto:info@dbsasiliconvalley.org">
+      <i class="soc-icon fa-solid fa-envelope white-text"></i>
+    </a>
+  </p>
+  <p>
+    <a href="https://www.facebook.com/dbsasanjoseca/">
+      <i class="soc-icon fa-brands fa-facebook-f white-text"></i>
+    </a>
+  </p>
+  <p>
+    <a href="https://www.instagram.com/dbsasanjose/?hl=en">
+      <i class="soc-icon fa-brands fa-instagram white-text"></i>
+    </a>
+  </p>
+  <p>
+    <a href="https://www.meetup.com/dbsasiliconvalley/">
+      <i class="fa-brands fa-meetup white-text"></i>
+    </a>
+  </p>
+</div>
   </div>
 
   <!-- FOOTER -->
   <footer class="center-text footer-text">
     <div class="copyright">©2022 by DBSA Silicon Valley</div>
-    <div class="author">Website by <a class="white-txt" target="_blank" href="https://graceavocado.com/">graceavocado</a></div>
+    <div class="author">Website by <a class="white-text" target="_blank" href="https://graceavocado.com/">graceavocado</a></div>
   </footer>
 
   <!-- JAVASCRIPT -->

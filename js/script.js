@@ -1,21 +1,17 @@
 /************** Toggle mobile menu */
-const toggle = document.querySelector(".toggle");
-const menu = document.querySelector(".menu");
+let menu = document.getElementById("menu");
+let mobile = document.getElementsByClassName("mobile-menu");
+let bg = document.getElementById("backdrop");
+let toggle = document.getElementById("toggle");
+let boolMenu = false;
 
-/* Toggle mobile menu */
 function toggleMenu() {
-    if (menu.classList.contains("active")) {
-        menu.classList.remove("active");
-
-        // adds the menu (hamburger) icon
-        toggle.querySelector("a").innerHTML = "<i class=’fas fa-bars’></i>";
-    } else {
-        menu.classList.add("active");
-
-        // adds the close (x) icon
-        toggle.querySelector("a").innerHTML = "<i class=’fas fa-times’></i>";
-    }
+  if (boolMenu == false) {
+    mobile[0].classList.add("visibility");
+    boolMenu = true;
+  }
+  else if (boolMenu == true) {
+    mobile[0].classList.remove("visibility");
+    boolMenu = false;
+  }
 }
-
-/* Event Listener */
-toggle.addEventListener("click", toggleMenu, false);
