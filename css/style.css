@@ -87,10 +87,6 @@ footer {
   font-weight: 900px;
 }
 
-.logo {
-  /* flex-grow: 0; */
-}
-
 #toggle {
   display: none;
 }
@@ -119,10 +115,7 @@ footer {
   transition-duration: 0.3s;
 }
 
-/**************FOOTER */
-.footer-text {}
-
-/**************FLEX */
+/**************CONTENT */
 /* HEADER */
 .header {
   display: flex;
@@ -135,7 +128,6 @@ footer {
 }
 
 .header-two {
-  /* background-color: var(--bg-color); */
   display: flex;
   justify-content: center;
   position: relative;
@@ -154,20 +146,14 @@ footer {
   font-weight: 400;
 }
 
-.white-text {
-  color: white;
-}
-
 /* CONTENT - 3 COLUMN*/
 .col-3 {
   display: flex;
   justify-content: center;
-  /* background-color: white; */
 }
 
 .col-3 div {
   background-color: white;
-  /* padding: 50px 50px 70px 50px; */
   margin: 20px;
   width: 500px;
 }
@@ -206,12 +192,19 @@ footer {
 }
 
 .col-1-pic {
-  background-image: url("../img/index-img/about-bekir-donmez.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
   width: 100rem;
+}
+
+.index-col-pic {
+  background-image: url("../img/index-img/about-bekir-donmez.jpg");
+}
+
+.program-col-pic {
+  background-image: url("../img/get-involved-img/cytonn-photography.jpg");
 }
 
 .col-1-text {
@@ -225,14 +218,29 @@ footer {
 
 /* PAGE BREAK */
 .picture-break {
-  background-image: url("../img/about-img/corina-ardeleanu-about.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
   width: 100%;
-  height: 25rem;
 }
+
+.pic-br-about {
+  background-image: url("../img/about-img/corina-ardeleanu-about.jpg");
+  height: 10rem;
+}
+
+.pic-br-feature {
+  background-image: url("../img/program-img/priscilla-du-preez.jpg");
+  height: 30rem;
+}
+
+/* AFFILIATION */
+.strip-text {
+  padding: 25px;
+  margin: 0px 25px;
+}
+
 /* RESOURCE */
 .center-resources {
   display: flex;
@@ -246,6 +254,25 @@ footer {
 
 .resource-text p {
   padding-bottom: 50px;
+}
+
+.resource-block {
+  padding: 25px;
+}
+
+.resource-sub {
+  padding: 25px;
+  margin: 25px auto;
+  max-width: 1000px;
+  background-color: white;
+}
+
+.resource-sub a {
+  text-decoration: underline;
+}
+
+.resource-sub ul {
+  margin-top: -20px;
 }
 
 /* CONTACT */
@@ -269,6 +296,10 @@ footer {
 
 .color-bg-primary {
   background-color: var(--color-primary);
+}
+
+.color-bg-strong {
+  background-color: var(--text-color);
 }
 
 /**************BUTTON */
@@ -312,6 +343,10 @@ footer {
   margin: auto;
 }
 
+.white-text {
+  color: white;
+}
+
 .spacing {
   margin: auto;
   padding: 5rem 0rem;
@@ -336,44 +371,11 @@ footer {
 .max-p {
   max-width: 1100px;
   margin: auto;
-  padding: 0 25px 10px 2px;
+  padding: 0 25px 10px 25px;
 }
 
 /**************RESPONSIVE */
-@media (max-width: 1100px) {
-
-  /* body */
-  body {
-    font-size: 1rem;
-  }
-
-  .menu-item {
-    margin-top: 7px;
-  }
-
-  /* .spacing {
-    margin: 5rem auto;
-  } */
-
-  /* 3 columns */
-  .menu-item a {
-    font-size: 1rem;
-  }
-
-  .box-padding h3 {
-    padding: 0 25px;
-  }
-
-  .box-padding p {
-    padding: 0 25px 25px 25px;
-  }
-
-  .box-padding a {
-    margin: 25px;
-  }
-}
-
-@media (max-width: 810px) {
+@media (max-width: 1000px) {
 
   /* navbar */
   #toggle {
@@ -432,9 +434,29 @@ footer {
     display: block;
   }
 
+  /* box padding */
+  .box-padding h3 {
+    padding: 0 25px;
+  }
+
+  .box-padding p {
+    padding: 0 25px 25px 25px;
+  }
+
+  .box-padding a {
+    margin: 25px;
+  }
+}
+
+@media (max-width: 810px) {
+
   /* header */
   .header div {
     margin: 10rem auto 3rem auto;
+  }
+
+  .header-two {
+    padding: 70px 0px 25px 0px;
   }
 
   h1 {
@@ -459,6 +481,10 @@ footer {
 
   .box-padding ul {
     margin-left: 0px;
+  }
+
+  .spacing {
+    padding: 2rem 0rem;
   }
 
   /* 1 column */
